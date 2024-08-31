@@ -19,9 +19,7 @@ public class web {
     @GetMapping("/")
     public String web() {
         System.out.println("LISTA USUARIOS" + usuarioImplemento.uPrueba());
-        usuarioImplemento.
-
-        capicua(2553);
+                capicua(1212);
         return "Hola Mundo";
     }
 

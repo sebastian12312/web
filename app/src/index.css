@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media (max-width: 400px) {
+    body{
+      min-width: 400px !important;
+      max-height: 100vh;
+    }
+}
