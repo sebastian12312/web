@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="border w-[700px] shadow-sm mx-auto mt-10 p-8">
+        <div class="flex justify-between gap-8">
+
+            <div class="w-full">
+                <label for="">selececcion una opcion:</label>
+                <select name="" id="select-tipo-consulta" class="border w-full rounded py-2  shadow-sm cursor-pointer ">
+                    <option value="">Nueva Organizacion</option>
+                    <option value="">Nueva Usuario</option>
+                    <option value="" class="text-stone-700 ">Seleccione una su consulta</option>
+                    <option value="" class="text-stone-700">Registrar Usuario</option>
+                    <option data="" class="text-stone-700">Actualización Datos</option>
+                    <option class="text-stone-700">Reseteo de Contraseña</option>
+                    <option class="text-stone-700">Consulta General</option>
+                </select>
+            </div>
+
+            <div class="w-full">
+                <label for="">selececcion su plataforma:</label>
+                <select name="" id="select-tipo-consulta" class="border w-full rounded py-2  shadow-sm cursor-pointer ">
+                    <option value="">Plataforma docs.davicloud</option>
+                    <option value="">Registrar Usuario</option>
+                    <option data="" type="">Actualización Datos</option>
+                    <option data="" type="">Reseteo de Contraseña</option>
+                    <option data="" type="">Consulta General</option>
+                </select>
+            </div>
+
+        </div>
+        <br>
+        <div class="flex justify-between gap-8">
+
+            <div class="w-full">
+                <label for="">selececcion una opcion:</label>
+                <select name="" id="select-tipo-consulta" class="border w-full rounded py-2  shadow-sm cursor-pointer ">
+                    <option value="">Nueva Organizacion</option>
+                    <option value="">Nueva Usuario</option>
+                    <option value="" class="text-stone-700 ">Seleccione una su consulta</option>
+                    <option value="" class="text-stone-700">Registrar Usuario</option>
+                    <option data="" class="text-stone-700">Actualización Datos</option>
+                    <option class="text-stone-700">Reseteo de Contraseña</option>
+                    <option class="text-stone-700">Consulta General</option>
+                </select>
+            </div>
+
+            <div class="w-full">
+                <label for="">selececcion su plataforma:</label>
+                <select name="" id="select-tipo-consulta" class="border w-full rounded py-2  shadow-sm cursor-pointer ">
+                    <option value="">Plataforma docs.davicloud</option>
+                    <option value="">Registrar Usuario</option>
+                    <option data="" type="">Actualización Datos</option>
+                    <option data="" type="">Reseteo de Contraseña</option>
+                    <option data="" type="">Consulta General</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="border mt-8 p-4 rounded shadow-sm">
+            <h1>Nuevo Usuario</h1>
+            <div>
+                <div>
+                    <label for="">Tipo usuario</label>
+                    <select name="" id="select-tipo-consulta"
+                        class="border w-full rounded py-2  shadow-sm cursor-pointer ">
+                        <option value="">Firmante</option>
+                        <option value="">Gestor</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="flex gap-4">
+                <div class="w-full">
+                    <label for="">Documento de Identidad</label>
+                    <select name="" id="select-tipo-consulta"
+                        class="border w-full rounded py-2  shadow-sm cursor-pointer ">
+                        <option value="">DNI</option>
+                        <option value="">CE</option>
+                        <option value="">PASAPORTE</option>
+                    </select>
+
+                </div>
+                <div class="w-full">
+                    <label for="">Documento de Identidad</label>
+                    <input type="text" class="border w-full rounded py-2  shadow-sm px-4">
+                </div>
+            </div>
+
+
+            <div class="flex gap-4">
+                <div class="w-full">
+                    <label for="">Nombre Completo</label>
+                    <input type="text" class="border w-full rounded py-2  shadow-sm px-4">
+
+                </div>
+                <div class="w-full">
+                    <label for="">Apellidos</label>
+                    <input type="text" class="border w-full rounded py-2  shadow-sm px-4">
+                </div>
+            </div>
+
+
+            <div class="flex gap-4">
+                <div class="w-full">
+                    <label for="">Nacionalidad</label>
+                    <input type="text" class="border w-full rounded py-2  shadow-sm px-4">
+
+                </div>
+                <div class="w-full">
+                    <label for="">Cargo</label>
+                    <input type="text" class="border w-full rounded py-2  shadow-sm px-4">
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <div class="w-full">
+                    <label for="">Correo Electronico</label>
+                    <input type="text" class="border w-full rounded py-2  shadow-sm px-4">
+
+                </div>
+                <div class="w-full">
+                    <label for="">Celular</label>
+                    <input type="text" class="border w-full rounded py-2  shadow-sm px-4">
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <div class="w-full">
+                    <label for="">direccion</label>
+                    <input type="text" class="border w-full rounded py-2  shadow-sm px-4">
+                </div>
+            </div>
+
+
+            <div class=" ">
+                <label for="">Permisos</label>
+                <div class="w-full flex justify-between">
+            
+                   
+                    <div class="">
+                        <div class="flex gap-2">
+                            <input type="checkbox" name="" id="" class="w-4 cursor-pointer">
+                            <p>Firma Digital</p>
+                        </div>
+    
+                        <div class="flex gap-2">
+                            <input type="checkbox" name="" id="" class="w-4 cursor-pointer">
+                            <p>Firma Electronica (OTP)</p>
+                        </div>
+    
+                        <div class="flex gap-2">
+                            <input type="checkbox" name="" id="" class="w-4 cursor-pointer">
+                            <p>Firma con Sello de Tiempo</p>
+                        </div>
+    
+    
+                        <div class="flex gap-2">
+                            <input type="checkbox" name="" id="" class="w-4 cursor-pointer">
+                            <p>Firma con validacion reniec</p>
+                        </div>
+    
+                        <div class="flex gap-2">
+                            <input type="checkbox" name="" id="" class="w-4 cursor-pointer">
+                            <p>Firma Portable</p>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                    <div>
+                        <div class="flex gap-2">
+                            <input type="checkbox" name="" id="" class="w-4 cursor-pointer">
+                            <p>Notificacion SMS</p>
+                        </div>
+    
+                        <div class="flex gap-2">
+                            <input type="checkbox" name="" id="" class="w-4 cursor-pointer">
+                            <p>Notificacion Correo</p>
+                        </div>
+    
+                        <div class="flex gap-2">
+                            <input type="checkbox" name="" id="" class="w-4 cursor-pointer">
+                            <p>Notificacion IVR</p>
+                        </div>
+    
+    
+                        <div class="flex gap-2">
+                            <input type="checkbox" name="" id="" class="w-4 cursor-pointer">
+                            <p>VoBo Firma Electronica (OTP)</p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

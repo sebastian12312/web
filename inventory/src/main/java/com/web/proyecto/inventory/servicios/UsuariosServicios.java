@@ -8,5 +8,5 @@ import java.util.List;
 public interface UsuariosServicios {
     List<Usuario> listarUsuarios ();
     List<Perfil> listarPerfil();
-
+    
 }

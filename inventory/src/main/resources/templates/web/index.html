@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="flex items-center justify-center min-h-screen">
+        <div>
+            <form  class="w-[500px] border rounded shadow-sm p-4">
+                <div>
+                    <label for class="block font-bold">Usuario:
+                    </label>
+                    <input id="usuario_login" type="text" class="border px-4 py-2 rounded outline-none w-full">
+                </div>
+                <div class="mt-4">
+                    <label for class="block font-bold">Contraseña:
+                    </label>
+                    <input id="password_login" type="password" class="border px-4 py-2 rounded outline-none w-full">
+                </div>
+                <div class="mt-4">
+                    <a id="buttom_iniciar_sesion" class="bg-sky-600 text-white w-full py-4 rounded">Iniciar
+                        sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        $('#buttom_iniciar_sesion').on('click', () => {
+            var loginUsuario = {
+                numero_documento: $('#usuario_login').val(), // Cambiado al correcto
+                password: $('#password_login').val()         // Cambiado al correcto
+            }
+            console.log(loginUsuario);
+        
+            async function login(loginUsuario) {
+                const consultaFetch = await fetch('http://localhost:8081/api/auth/login', { // Añadido http://
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json" // Se añade el header
+                    },
+                    body: JSON.stringify(loginUsuario) // Convertimos el objeto a JSON
+                });
+                
+                const respuesta = await consultaFetch.json();
+                console.log(respuesta);
+            }
+        
+            // Llamamos a la función login aquí
+
+        });
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+/*tipo consulta*/
+#select-tipo-consulta:optional {
+    background: #f3f3f3;
+    border: 1px solid #bdbdbd;
+}
+#select-tipo-consulta option {
+background: #f3f3f3;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}

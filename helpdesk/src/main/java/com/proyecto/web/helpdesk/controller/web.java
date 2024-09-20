@@ -1,18 +1,14 @@
-package com.web.proyecto.inventory.controlador;
-
+package com.proyecto.web.helpdesk.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-
 @Controller
-
 public class web {
-
+    
     @GetMapping("/")
-    public String main(){
+    public String  webMain(){
         
-        return   "web/index";
+        return "web/index";
     }
 }
